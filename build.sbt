@@ -2,7 +2,7 @@ import com.typesafe.tools.mima.core.MissingClassProblem
 
 name := "spark-xml"
 
-version := "0.18.0"
+version := "0.19.0"
 
 organization := "com.databricks"
 
@@ -18,7 +18,7 @@ val sparkVersion = sys.props.get("spark.testVersion").getOrElse("3.5.1")
 autoScalaLibrary := false
 
 libraryDependencies ++= Seq(
-  "commons-io" % "commons-io" % "2.11.0",
+  "commons-io" % "commons-io" % "2.15.1",
   "org.glassfish.jaxb" % "txw2" % "3.0.2",
   "org.apache.ws.xmlschema" % "xmlschema-core" % "2.3.0",
   "org.scala-lang.modules" %% "scala-collection-compat" % "2.9.0",
